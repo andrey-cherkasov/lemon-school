@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Task3 Form</title>
+</head>
+<style>
+ 	 * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+form {
+  width: 460px;
+  margin: 70px auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.2);
+  padding: 14px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  }
+
+  input[type="text"] {
+  display: inline-block;
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 100;
+  padding: 2px;
+  margin: 3px auto;
+}
+
+.line {
+  margin: 15px 0;
+}
+
+.radiogroup {
+  margin-bottom: 5px;
+  padding: 10px;
+}
+.radiogroup label {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+button {
+  display: inline-block;
+  width: 30%;
+  background-color: #000;
+  border: 1px solid #000;
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+  font-weight: 400;
+  padding: 5px;
+
+}
+
+</style>
+<body>
+<form action="#">
+	
+	<div class="line">
+ 	    <label for="name">Ваше имя</label>
+ 	    <input type="text" placeholder="Например, Иванов Иван Иванович">	
+ 	  </div>
+
+ 	  <div class="line">
+ 	    <label for="surname">Ваш род деятельности</label>
+ 	    <input type="text" placeholder="Например, Выращиваю огурцы">	
+ 	  </div>
+
+ 	 <div class="border">
+      <p>Согласны ли Вы с условиями?</p>
+     <div class="radiogroup">
+       <label><input type="radio" name="gender" value="yes"/> Категорически ДА!</label>
+       <label><input type="radio" name="gender" value="no"/> Категорически НЕТ!</label>
+     </div>
+  </div>
+
+  <button type="submit">Отправить</button>
+</form>
+	
+</body>
+</html>
